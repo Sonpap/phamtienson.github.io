@@ -1,0 +1,127 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5\tools/idf_monitor.py -p com3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace E:\Htn\esp32c3_task_queue\build\freertos_demo.elf E:\Htn\esp32c3_task_queue\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5\tools\idf.py' '-p' 'com3'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x1 (POWERON),boot:0xd (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15c0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2ff0
+entry 0x403cbf1a
+[0;32mI (30) boot: ESP-IDF v5.5 2nd stage bootloader[0m
+[0;32mI (30) boot: compile time Sep 28 2025 15:41:02[0m
+[0;32mI (30) boot: chip revision: v0.4[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (38) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=09930h ( 39216) map[0m
+[0;32mI (95) esp_image: segment 1: paddr=00019958 vaddr=3fc8c200 size=013bch (  5052) load[0m
+[0;32mI (97) esp_image: segment 2: paddr=0001ad1c vaddr=40380000 size=052fch ( 21244) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1941ch (103452) map[0m
+[0;32mI (128) esp_image: segment 4: paddr=00039444 vaddr=403852fc size=06d54h ( 27988) load[0m
+[0;32mI (133) esp_image: segment 5: paddr=000401a0 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (137) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (137) boot: Disabling RNG early entropy source...[0m
+[0;32mI (153) cpu_start: Unicore app[0m
+[0;32mI (161) cpu_start: Pro cpu start user code[0m
+[0;32mI (161) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (161) app_init: Application information:[0m
+[0;32mI (161) app_init: Project name:     freertos_demo[0m
+[0;32mI (165) app_init: App version:      1[0m
+[0;32mI (169) app_init: Compile time:     Sep 28 2025 15:40:53[0m
+[0;32mI (174) app_init: ELF file SHA256:  2605a9d5e...[0m
+[0;32mI (178) app_init: ESP-IDF:          v5.5[0m
+[0;32mI (182) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (186) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (190) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (194) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (200) heap_init: At 3FC8E4E0 len 00031B20 (198 KiB): RAM[0m
+[0;32mI (205) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (211) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (217) heap_init: At 50000020 len 00001FC8 (7 KiB): RTCRAM[0m
+[0;32mI (223) spi_flash: detected chip: generic[0m
+[0;32mI (226) spi_flash: flash io: dio[0m
+[0;33mW (229) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (241) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (247) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (254) main_task: Started on CPU0[0m
+[0;32mI (264) main_task: Calling app_main()[0m
+[0;32mI (264) SMART_HOUSE: Smart house system starting...[0m
+[0;32mI (264) SMART_HOUSE: Controller: LIGHT ON[0m
+[0;32mI (264) SMART_HOUSE: SimTask: sent ON[0m
+[0;32mI (274) SMART_HOUSE: Logger: light_state=ON[0m
+[0;32mI (274) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1454[0m
+[0;32mI (284) SMART_HOUSE: All tasks started with ISR + Mutex sync.[0m
+[0;32mI (284) main_task: Returned from app_main()[0m
+[0;32mI (784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1310[0m
+[0;32mI (1284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1246[0m
+[0;32mI (1784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1160[0m
+[0;32mI (2284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1070[0m
+[0;32mI (2784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=973[0m
+[0;32mI (3274) SMART_HOUSE: Logger: light_state=ON[0m
+[0;32mI (3284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=904[0m
+[0;32mI (3784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=893[0m
+[0;32mI (4284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=905[0m
+[0;32mI (4784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=912[0m
+[0;32mI (5274) SMART_HOUSE: Controller: LIGHT OFF[0m
+[0;32mI (5274) SMART_HOUSE: SimTask: sent OFF[0m
+[0;32mI (5284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=875[0m
+[0;32mI (5784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=921[0m
+[0;32mI (6274) SMART_HOUSE: Logger: light_state=OFF[0m
+[0;32mI (6284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=952[0m
+[0;32mI (6784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1022[0m
+[0;32mI (7284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1118[0m
+[0;32mI (7784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1295[0m
+[0;32mI (8284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1404[0m
+[0;32mI (8784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1454[0m
+[0;32mI (9274) SMART_HOUSE: Logger: light_state=OFF[0m
+[0;32mI (9284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1466[0m
+[0;32mI (9784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1342[0m
+[0;32mI (10274) SMART_HOUSE: Controller: LIGHT ON[0m
+[0;32mI (10274) SMART_HOUSE: SimTask: sent ON[0m
+[0;32mI (10284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1260[0m
+[0;32mI (10784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1080[0m
+[0;32mI (11284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=909[0m
+[0;32mI (11784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=909[0m
+[0;32mI (12274) SMART_HOUSE: Logger: light_state=ON[0m
+[0;32mI (12284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=907[0m
+[0;32mI (12784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=920[0m
+[0;32mI (13284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=937[0m
+[0;32mI (13784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=975[0m
+[0;32mI (14284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1084[0m
+[0;32mI (14784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1305[0m
+[0;32mI (15274) SMART_HOUSE: Controller: LIGHT OFF[0m
+[0;32mI (15274) SMART_HOUSE: SimTask: sent OFF[0m
+[0;32mI (15274) SMART_HOUSE: Logger: light_state=OFF[0m
+[0;32mI (15284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1387[0m
+[0;32mI (15784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1466[0m
+[0;32mI (16284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1384[0m
+[0;32mI (16784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1226[0m
+[0;32mI (17284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1066[0m
+[0;32mI (17784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=910[0m
+[0;32mI (18274) SMART_HOUSE: Logger: light_state=OFF[0m
+[0;32mI (18284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=909[0m
+[0;32mI (18784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=904[0m
+[0;32mI (19284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=920[0m
+[0;32mI (19784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=952[0m
+[0;32mI (20274) SMART_HOUSE: Controller: LIGHT ON[0m
+[0;32mI (20274) SMART_HOUSE: SimTask: sent ON[0m
+[0;32mI (20284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1070[0m
+[0;32mI (20784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1150[0m
+[0;32mI (21274) SMART_HOUSE: Logger: light_state=ON[0m
+[0;32mI (21284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1342[0m
+[0;32mI (21784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1454[0m
+[0;32mI (22284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1469[0m
+[0;32mI (22784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1405[0m
+[0;32mI (23284) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1304[0m
+[0;32mI (23784) SMART_HOUSE: GasSensorTask: MQ-2 ADC=1165[0m
+[0;32mI (24274) SMART_HOUSE: Logger: light_state=ON[0m
+[0;32mI (24284) SMAR
